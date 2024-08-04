@@ -1,0 +1,20 @@
+{
+  "name": "pong",
+  "version": "1.0.0",
+  "description": "ping pong game",
+  "main": "start-server.js",
+  "scripts": {
+    "server": "sudo /home/vege/.nvm/versions/node/v22.2.0/bin/nodemon --inspect start-server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "path": "^0.12.7",
+    "socket.io": "^4.7.5",
+    "uWebSockets.js": "github:uNetworking/uWebSockets.js#v20.43.0"
+  },
+  "devDependencies": {
+    "gulp": "^5.0.0"
+  }
+}

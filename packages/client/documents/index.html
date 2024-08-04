@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Multiplayer Ping Pong</title>
+    <link rel="stylesheet" href="/documents/styles.css">
+    <script src="/lib/pixi.js"></script>
+    <script src="/lib/socketio.js"></script>
+    <script src="/documents/index.js" type="module"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu" id="mainMenu">
+            <h1>Online Multiplayer Ping Pong</h1>
+            <button id="createGameBtn">Create Game</button>
+            <button id="joinGameBtn">Join Game</button>
+            <p id="playersOnlineIndicator">Loading...</p>
+        </div>
+        <div id="joinGameMenu" class="hidden">
+            <h2>Join Game</h2>
+            <input type="text" id="gameCode" placeholder="Enter Game Code" required>
+            <input type="text" id="playerName" placeholder="Enter Your Username" required>
+            <button id="joinGameSubmitBtn">Join Game</button>
+            <button id="joinGameCancelBtn" class="btn-secondary">Cancel</button>
+            <p id="joinGameError" class="error"></p>
+        </div>
+        <div class="menu hidden" id="createGameMenu">
+            <h2>Create Game</h2>
+            <input type="text" id="createGameUsernameInput" placeholder="Enter Your Username">
+            <button id="createGameActionBtn">Create Game</button>
+            <button id="createGameCancelBtn" class="btn-secondary">Cancel</button>
+            <p id="createGameError" class="error"></p>
+
+        </div>
+        <div class="menu hidden" id="gameWaitingMenu">
+            <h1>Waiting for players...</h1>
+            <h3 class="nomargin">Invite code:</h3>
+            <p class="text-border nomargin" id="gameIdContainer">Loading...</p>
+            <p id="playersOnlineIndicator">Loading...</p>
+        </div>
+        <div class="menu hidden" id="gameArea">
+            <span id="scoreContainer">
+                <h1 style="display:inline;text-align:left;margin-right:20px;"><span id="blueUsername">Blue</span>: <span id="blueScore">0</span></h1>
+                <h1 style="display:inline;text-align:right;margin-left:20px;"><span id="redUsername">Red</span>: <span id="redScore">0</span></h1>
+            </span>
+            <span id="canvasContainer">
+                
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>

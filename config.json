@@ -1,0 +1,10 @@
+{
+    "server_listen_port": 80,
+    "canvas_width": 1000,
+    "canvas_height": 700,
+    "ball_width": 35,
+    "ball_height": 35,
+    "paddle_height": 114,
+    "paddle_width": 16,
+    "paddle_speed": 20
+}

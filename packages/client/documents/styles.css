@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff
+}
+.hidden {
+    display: none;
+}
+button {
+    background: #28a745;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #218838;
+}
+
+button:active {
+    background: #1e7e34;
+}
+
+#join-game-menu {
+    margin-top: 20px;
+    padding: 20px;
+    background: #ffffff1a;
+    border-radius: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#joinGameSubmitBtn {
+    background: #28a745;
+}
+
+#joinGameSubmitBtn:hover {
+    background: #218838;
+}
+
+#joinGameSubmitBtn:active {
+    background: #1e7e34;
+}
+.btn-secondary {
+    background: grey;
+    transition: background 0.3s ease;
+}
+.btn-secondary:hover {
+    background-color: #646464;
+}
+.error {
+    color: #fc5a5a;
+}
+.text-border {
+    border:3px solid #000;
+    border-radius: 5px;
+    background-color: #755600;
+    color:white;
+    font-size: 20px;
+    text-align:left;
+    padding:10px;
+}
+.nomargin {
+    margin: 0px
+}
